@@ -84,7 +84,7 @@ document
 	.getElementsByTagName("body")[0]
 	.setAttribute(
 		"style",
-		"display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; gap: 10px"
+		"display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #AAAAAA; height: 100vh; gap: 10px"
 	);
 
 const gameRound = document.createElement("div");
@@ -103,7 +103,7 @@ gameScores.setAttribute(
 playerScoreBox = document.createElement("div");
 playerScoreBox.setAttribute(
 	"style",
-	"display: flex; flex-direction: column; border: solid gray; padding: 0px 15px; text-align: center"
+	"display: flex; flex-direction: column; border: solid gray; padding: 5px 15px; text-align: center"
 );
 gameScores.appendChild(playerScoreBox);
 
@@ -115,7 +115,7 @@ playerScoreBox.appendChild(playerScore);
 cpuScoreBox = document.createElement("div");
 cpuScoreBox.setAttribute(
 	"style",
-	"display: flex; flex-direction: column; border: solid gray; padding: 0px 15px; text-align: center"
+	"display: flex; flex-direction: column; border: solid gray; padding: 5px 15px; text-align: center"
 );
 gameScores.appendChild(cpuScoreBox);
 
