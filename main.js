@@ -20,25 +20,6 @@ function getComputerChoice() {
 	}
 }
 
-// function getHumanChoice() {
-// 	let playerChoice = prompt("What will you play?");
-// 	if (
-// 		playerChoice.toLowerCase() == "rock" ||
-// 		playerChoice.toLowerCase() == "paper" ||
-// 		playerChoice.toLowerCase() == "scissors"
-// 	) {
-// 		return playerChoice.toLowerCase();
-// 	} else return console.error("insert a valid option");
-// }
-
-// function showScores() {
-// 	if (humanScore > computerScore)
-// 		console.log(humanScore + " to " + computerScore);
-// 	else if (humanScore < computerScore)
-// 		console.log(humanScore + " to " + computerScore);
-// 	else console.log(humanScore + " to " + computerScore);
-// }
-
 function humanWin(humanPlay, cpuPlay) {
 	humanScore = humanScore + 1;
 	gameState.textContent = "You Win! " + humanPlay + " beats " + cpuPlay;
@@ -99,11 +80,6 @@ function playRound(humanPlay) {
 	if (currRound == 6) endGame();
 }
 
-// for (let i = 0; i < 5; i++) {
-// 	console.log("Round " + (i + 1));
-// 	playRound();
-// }
-
 document
 	.getElementsByTagName("body")[0]
 	.setAttribute(
@@ -133,7 +109,7 @@ gameScores.appendChild(playerScoreBox);
 
 playerScoreBox.textContent = "Player:";
 playerScore = document.createElement("p");
-playerScore.textContent = "nil";
+playerScore.textContent = "0";
 playerScoreBox.appendChild(playerScore);
 
 cpuScoreBox = document.createElement("div");
@@ -145,7 +121,7 @@ gameScores.appendChild(cpuScoreBox);
 
 cpuScoreBox.textContent = "Cpu:";
 cpuScore = document.createElement("p");
-cpuScore.textContent = "nil";
+cpuScore.textContent = "0";
 cpuScoreBox.appendChild(cpuScore);
 
 const gameBox = document.createElement("div");
@@ -195,4 +171,3 @@ document.body.appendChild(gameScores);
 document.body.appendChild(gameBox);
 document.body.appendChild(gameState);
 document.body.appendChild(reset);
-//playGame();
